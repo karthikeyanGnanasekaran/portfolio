@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <p><i class="fa-solid fa-square-full"></i> Karthikeyan Gnanasekaran</p>
+            <nav>
+                <a href="#">ABOUT ME</a>
+                <a href="#">PROJECT</a>
+                <a href="#">CERTIFICATE</a>
+                <button id="toggle-mode" style="margin-left: 20px; padding: 5px 10px; cursor: pointer;">
+                    <i class="fa-solid fa-sun"></i>
+                      <i>/</i>
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="left-section">
+            <img src="green.jpg" alt="Background Image" class="bg-image">
+            <div class="profile-card">
+                <img src="my profile3.jpg" alt="Profile Photo" class="profile-photo">
+                <div class="para">
+                    <h2>Karthik G</h2>
+                    <p>Engineer | Visionary | Innovative</p>
+                    <p>Chennai, India</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/karthikeyan-gnanasekaran-a4811028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?next=%2F_" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <h1>Come On In</h1>
+            <div class="inline-text">
+                <h2>Hello!</h2>
+                <p>I'm Karthik, a second-year Electronics and Communication Engineering student with a passion for exploring technology, innovation, and creative projects. From participating in hackathons to building innovative solutions like mini project and digital circuit designs, I strive to combine learning with hands-on experience. With a focus on projects related to digital circuits, web development, and emerging technologies, I’m always eager to connect, collaborate, and learn from opportunities.Explore my journey, projects, and aspirations through this space. Whether it's problem solving, or contributing to clubs and community events, every step adds to the excitement of this journey. Thank you for stopping by let's innovate together!</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        const toggleButton = document.getElementById('toggle-mode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('night-mode');
+        });
+    </script>
+     <div class="timeline">
+        <div class="qualification">
+          <h2>The Story so Far</h2>
+        </div>
+        <div class="gate">
+            <i class="fa-solid fa-location-dot"></i>
+              <h4>Dream</h4>
+        </div>
+        <div class="collage">
+              <div class="collageyear">
+                <i class="fa-solid fa-location-dot"></i>
+                 <h4>Bachelor of Technology</h4><p> (2023 - 2027)</p>
+               </div>
+            <h4>SRMIST, Chennai</h4>
+            <p>CGPA: 8.20</p>
+         </div>
+        <div class="school">
+            <div class="busmove">
+                <i class="fa-solid fa-bus"></i>
+            </div>
+              <div class="schoolyear">
+                <i class="fa-solid fa-location-dot"></i>
+                 <h4>Higher Secondary</h4><p> (2020 - 2022)</p>
+               </div>
+            <h4>SRV BOYS HIGHER SECONDARY SCHOOL</h4>
+            <p>Percentage: 81.6%</p>
+         </div>
+
+         <script>
+            document.addEventListener("DOMContentLoaded", () => {
+              const bus = document.querySelector('.busmove');
+
+              const observer = new IntersectionObserver((entries) => {
+                 entries.forEach((entry) => {
+                   if (entry.isIntersecting) {
+                      bus.style.animation = "crossMotion 7s ease-in-out forwards";
+                    }
+                });
+            });
+
+            observer.observe(bus);
+         });
+         </script>
+    </div>
+
+    <div class="hr" style="width: 90%; height: 2px;"></div>
+
+    <div class = "project">
+        <p class="protitle" style="font-weight: 200px;">PROJECTS</p>
+        <div class="tham">
+            <h2>THAM Robot - Smart Farm Monitoring System (Hackathon Project)</h2>
+            <div class="thamcont">
+            <p1 >  Developed a smart toilet system for specially-abled individuals, integrating IoT-based sensors,</p1>
+            <p1 > Lead a team in designing, prototyping, and presenting the solution in a Inter Collage-level competition </p1>
+            </div>
+            <img src="car.jpg" alt="Profile Photo" class="tham-photo">    
+            <div class="thamobjective">
+               <p1>The THAM Robot is an innovative autonomous system designed for Farming Automation. Built using a Arduino and Raspberry Pi, it integrates ultrasonic, IR, Temperature for real-time object detection and path planning.</p1>
+
+               <P1>Equipped with DC motors, the robot ensures precise movement and efficiency. It features for seamless remote operation and monitoring.</P1>
+                
+               <P11>With AI-driven decision-making, IoT connectivity, the THAM Robot showcases expertise in embedded systems, robotics, and automation. This project demonstrates advanced problem-solving skills and innovation in real-world applications.</p1>
+            </div>
+        </div>
+        <div class="charge">
+            <h2>Autonomous Robotic Charging Station for Road EVs (Ongoing Research Project) </h2>
+            <div class="chargecont">
+            <p1 >  Working under Prof. Dhanalakshmi to develop an automated robotic arm for EV charging stations, </p1>
+            <p1> Designing a robotic arm that autonomously plugs/unplugs charging cables based on socket detection 
+                using Computer Vision (CV) </p1>
+            </div> 
+            <img src="charge.png" alt="Profile Photo" class="charge-photo"> 
+            <div class="chargeobjective">
+               <P1> ● The Autonomous Charging Station is designed to provide a seamless and efficient power management solution for autonomous robots, electric vehicles, or battery-powered systems. The primary objective is to ensure uninterrupted operation by enabling self-charging without human intervention.</p1>
+            </div>
+        </div>
+    </div>
+
+    <div class="hr1" style="width: 90%; height: 2px;"></div> 
+
+    <div class="certificate">
+        <p class="certititle">CERTIFICATES</p>
+    </div>     
+    <div class="container">
+        <span class="slider" id="slider1"></span>
+        <span class="slider" id="slider2"></span>
+        <span class="slider" id="slider3"></span>
+        <span class="slider" id="slider4"></span>
+        <span class="slider" id="slider5"></span>
+        <span class="slider" id="slider6"></span>
+        <span class="slider" id="slider7"></span>
+
+        <div class="imgContainer">
+
+           <div class="slide_div" id="slide_1">
+            <img src="nptel.jpg" alt="" class="img" id="img1">
+            <a href="#slider1" class="button" id="button1"></a>
+           </div>
+           <div class="slide_div" id="slide_2">
+            <img src="python.jpg" alt="" class="img" id="img2">
+            <a href="#slider2" class="button" id="button2"></a>
+           </div>
+           <div class="slide_div" id="slide_3">
+            <img src="iot.jpg" alt="" class="img" id="img3">
+            <a href="#slider3" class="button" id="button3"></a>
+           </div>
+           <div class="slide_div" id="slide_4">
+            <img src="hack.jpg" alt="" class="img" id="img4">
+            <a href="#slider4" class="button" id="button4"></a>
+           </div>
+           <div class="slide_div" id="slide_5">
+            <img src="social.jpg" alt="" class="img" id="img5">
+            <a href="#slider5" class="button" id="button5"></a>
+           </div>
+           <div class="slide_div" id="slide_6">
+            <img src="AI.jpg" alt="" class="img" id="img6">
+            <a href="#slider6" class="button" id="button6"></a>
+           </div>
+           <div class="slide_div" id="slide_7">
+            <img src="gni.jpg" alt="" class="img" id="img7">
+            <a href="#slider7" class="button" id="button7"></a>
+           </div>
+
+        </div>
+        
+    </div>
+    <div class="endcard">
+        <div class="end">
+            <P>THANK YOU</P>
+        </div>
+        <div class="top">
+            <p>Back to Top</p>
+        </div>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <div class="contact-details">
+                    <p><strong>📍 Address:</strong> SRMIST, Chennai, INDIA</p>
+                    <p><strong>📞 Phone:</strong> +91 96006 19884</p>
+                    <p><strong>📧 Email:</strong> karthikeyan.g9600@gmail.com</p>
+                </div>
+    
+                <!-- Contact Form -->
+                <form action="#" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/karthikeyan-gnanasekaran-a4811028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?next=%2F_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a> 
+        </div>
+        <div class="copy"><p>© 2024 Professional portfolio. All Rights Reserved.</p></div>
+    </div>
+</body>
+</html>
