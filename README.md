@@ -28,7 +28,7 @@ To run this project locally:
 Clone the repository:
 
 bash
-git clone https://github.com/yourusername/your-portfolio.git
+git clone [https://github.com/yourusername/your-portfolio.git](https://github.com/karthikeyanGnanasekaran/portfolio.git)
 Open the folder and locate index.html.
 
 Double-click index.html or open it in your browser of choice.
